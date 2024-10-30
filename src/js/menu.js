@@ -3,7 +3,6 @@ const menuIcon = document.getElementById("menu-icon");
 const navBar = document.querySelector(".nav-bar");
 
 menu.onclick = function () {
-    if (window.innerWidth <= 1000) { 
         navBar.classList.toggle("ativar");
         
         if (navBar.classList.contains("ativar")) {
@@ -11,9 +10,7 @@ menu.onclick = function () {
         } else {
             menuIcon.src = "/src/icons/icons-menu.svg"; 
         }
-    }
 };
-
 
 window.addEventListener("resize", function () {
     if (window.innerWidth > 1000) {
