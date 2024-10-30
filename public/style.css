@@ -314,8 +314,15 @@ body {
     }
 
     .nav-bar.ativar li {
-        align-content: center;
+        width: 100vw;
+        height: 100%;
     }
+
+    .nav-bar.ativar a:hover {
+        background: black;
+        color: white;
+    }
+
 
     .nav-menu {
         flex-direction: column;
