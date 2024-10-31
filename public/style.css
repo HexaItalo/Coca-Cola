@@ -1,11 +1,32 @@
 /*Configura Global */
 :root {
-    --colorBlack: #000000;
-    --colorLightBlack: #262626;
-    --colorGray: #f2f2f2;
-    --colorWhite: #ffffff;
-    --colorLogoWhite: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
+    --cor-base: #e2e2e2;
+    --cor-variente: #ffffff;
+    --cor-primaria:  #ffffff;
+    --cor-secundaria: #363636;
+    --texto-primario: #000000;
+    --texto-secundario: #ffffff;
+    --logo-primario: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
+    --logo-sencudario: ;
+    --sombra: 0px 10px 10px rgba(38, 38, 38, 0.5);
+    
+
+
+
 }
+
+.modo-escuro {
+    --cor-base: #2a2a2a;
+    --cor-variente: #1d1d1d;
+    --cor-primaria: #1d1d1d;
+    --cor-secundaria:   #ffffff ;
+    --texto-primario: #ffffff;
+    --texto-secundario: #000000;
+    --logo-primario: none;
+    --logo-sencudario:invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%) ;
+    --sombra: 0px 10px 10px rgba(255, 255, 255, 0.5);
+}
+
 
 @font-face {
     font-family: Poppins;
@@ -37,7 +58,7 @@
 }
 
 body {
-    background: var(--colorGray);
+    background: var(--cor-base);
 }
 
 .container {
@@ -53,12 +74,12 @@ body {
 /*Navegação*/
 .menu {
     display: none;
-    background: var(--colorWhite);
+    background: var(--cor-primaria);
     border: none;
 }
 
 #menu-icon {
-    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
+    filter: var(--logo-primario);
     width: 5vw;
     height: 5vh;
     min-width: 50px;
@@ -72,12 +93,11 @@ body {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: rgb(255, 255, 255);
-    box-shadow: 1px 1px 1px 1px #d2d2d2;
+    background: var(--cor-primaria);
 }
 .tema-icon{
     border-radius: 5px;
-    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
+    filter: var(--logo-primario);
     width: 40px;
     height: 40px;
 }
@@ -93,7 +113,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 10vh;
-    background: var(--colorWhite);
+    background: var(--cor-primaria);
     padding: 0 5rem;
 }
 
@@ -108,7 +128,11 @@ body {
 }
 
 .nav-link {
-    color: black;
+    color:  var(--texto-primario);
+}
+
+.nav-logo {
+    filter: var(--logo-sencudario);
 }
 
 /* SLOGAN */
@@ -148,8 +172,8 @@ body {
     display: inline-block;
     margin: 1rem 0 1rem 0;
     font-size: 1.2rem;
-    color: black;
-    background: white;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 0, 0);
     text-align: center;
     width: 100%;
     padding: 0.3rem;
@@ -157,7 +181,7 @@ body {
 }
 
 .slogan-icon {
-    filter: var(--colorLogoWhite);
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
     width: 15vw;
     height: 10vh;
     min-width: 250px;
@@ -176,7 +200,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: var(--colorWhite);
+    background: var(--cor-variente);
     min-width: 0;
 
     word-wrap: break-word;
@@ -187,7 +211,7 @@ body {
 
 .card:hover {
     transition: 0.5s;
-    box-shadow: 0px 10px 10px rgba(38, 38, 38, 0.5);
+    box-shadow: var(--sombra);
 }
 
 .card img {
@@ -198,6 +222,7 @@ body {
     flex: 1 1 auto;
     margin: 1rem;
     gap: 1rem;
+    color: var(--texto-primario);
 }
 
 .card-titulo {
@@ -228,12 +253,13 @@ body {
 .artigo-titulo {
     font-family: PoppinsBold;
     font-size: clamp(1rem, 0.9072rem + 4.9485vw, 2.5rem);
+    color: var(--texto-primario);
 }
 
 .artigo-texto {
     font-family: PoppinsLight;
     font-size: clamp(0.7rem, 0.9381rem + 3.299vw, 1.5rem);
-    color: #000000d1;
+    color: var(--texto-primario);
 }
 
 .familia-img {
@@ -255,25 +281,25 @@ body {
 
 /*Rodapé */
 .rodape {
-    background: var(--colorLightBlack);
+    background: #181818;
 }
 
 .sobre {
     display: flex;
     padding-top: 2rem;
     justify-content: space-between;
-    border-bottom: 3px solid var(--colorWhite);
+    border-bottom: 3px solid #ffffff;
     align-items: center;
 }
 
 .sobre h3 {
-    color: var(--colorWhite);
+    color: #ffffff;
     font-family: PoppinsLight;
     font-size: clamp(0.5rem, 0.1rem + 4vw, 2rem);
 }
 
 .sobre img {
-    filter: var(--colorLogoWhite);
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
     width: 15vw;
     height: 10vh;
     min-height: 100px;
@@ -289,7 +315,7 @@ body {
 .social ul {
     display: flex;
     gap: 10px;
-    filter: var(--colorLogoWhite);
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
     justify-content: end;
 }
 
@@ -300,7 +326,7 @@ body {
 }
 
 .sobre-itens a {
-    color: var(--colorWhite);
+    color: #ffffff;
 }
 
 .sobre-itens li {
@@ -325,7 +351,7 @@ body {
         right: 0;
         width: 100%;
         height: 0;
-        background: var(--colorWhite);
+        background: var(--cor-primaria);
         transition: 0.2s;
         overflow: hidden;
     }
@@ -360,8 +386,8 @@ body {
     }
     
     .nav-menu a:hover {
-        color: white;
-        background: var(--colorLightBlack);
+        color:  var(--texto-secundario);
+        background: var(--cor-secundaria);
         transition: 0.5s;
     }
 
