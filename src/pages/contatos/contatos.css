@@ -1,1 +1,155 @@
 @import url(/public/style.css);
+
+.conosco-head {
+    height: 10vh;
+    background: var(--cor-secundaria);
+}
+
+.conosco-body {
+    height: 100%;
+    color: var(--texto-secundario);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conosco-img {
+    filter: var(--logo-primario);
+    height: 50%;
+}
+
+/*Contato Base */
+.contato-head {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1vw;
+}
+
+
+/* Contato Info */
+.contato-main {
+    color: var(--texto-primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--cor-variente);
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 315px;
+    box-shadow: var(--sombra);
+}
+
+.contato-main h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contato-main p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    
+}
+
+.contato-main h4 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.contato-main img {
+    filter: var(--logo-sencudario);
+}
+
+
+/* Formulario */
+.contato-form fieldset {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    gap: 1rem;
+}
+
+.contato-form legend {
+    color: var(--texto-primario);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: PoppinsMedium;
+    width: 100%;
+}
+.contato-itens {
+    display: flex;
+    flex-direction: column;
+    color: var(--texto-primario);
+}
+
+.contato-form textarea {
+    height: 30vh;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contato-button {
+    border: none;
+    height: 5vh;
+    width: 25%;
+    min-width: 100px;
+    background: var(--cor-secundaria) ;
+    color: var(--texto-secundario);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+    border: 1px solid black;
+}
+
+.contato-button:hover {
+    background: var(--cor-primaria);
+    color: var(--texto-primario)
+}
+
+.contato-input {
+    height: 5vh;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+
+}
+
+/* Perguntas */
+.faqs-head {
+    background: var(--cor-variente);
+    border-top: 1px solid black;
+}
+
+.faqs-main {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    color: var(--texto-primario);
+}
+.faqs-perguntas {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.faqs-main h3 {
+    font-size: 1.5rem;
+}
+
+.faqs-main h4 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .contato-head {
+        grid-template-columns: 1fr;
+    }
+}

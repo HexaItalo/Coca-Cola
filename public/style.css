@@ -3,11 +3,11 @@
     --cor-base: #e2e2e2;
     --cor-variente: #ffffff;
     --cor-primaria:  #ffffff;
-    --cor-secundaria: #363636;
+    --cor-secundaria: #000000;
     --texto-primario: #000000;
     --texto-secundario: #ffffff;
     --logo-primario: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
-    --logo-sencudario: ;
+    --logo-sencudario: none;
     --sombra: 0px 10px 10px rgba(38, 38, 38, 0.5);
     
 
@@ -17,7 +17,7 @@
 
 .modo-escuro {
     --cor-base: #2a2a2a;
-    --cor-variente: #1d1d1d;
+    --cor-variente: #202020;
     --cor-primaria: #1d1d1d;
     --cor-secundaria:   #ffffff ;
     --texto-primario: #ffffff;
@@ -63,7 +63,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
 .img-fluido {
@@ -101,7 +101,7 @@ body {
     width: 40px;
     height: 40px;
 }
-.teste{
+.nav-center{
     display: flex;
     align-items: center ;
 }
