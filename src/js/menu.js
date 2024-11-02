@@ -1,6 +1,21 @@
 const menu = document.querySelector(".menu");
 const menuIcon = document.getElementById("menu-icon");
 const navBar = document.querySelector(".nav-bar");
+const temaIcon = document.querySelector(".tema-icon");
+const tema = document.querySelector(".tema-btn");
+const corpo = document.querySelector("body");
+
+tema.onclick = function (){
+    tema.classList.toggle("modo-escuro");
+    corpo.classList.toggle("modo-escuro");
+
+    if (corpo.classList.contains("modo-escuro")){
+        temaIcon.src = "/src/icons/icons-light_mode.svg";
+    }else{
+        temaIcon.src = "/src/icons/icons-dark_mode.svg";
+    }
+}
+
 
 menu.onclick = function () {
         navBar.classList.toggle("ativar");
