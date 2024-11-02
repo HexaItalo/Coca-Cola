@@ -94,7 +94,13 @@ body {
     height: 40px;
     cursor: pointer;
     background: var(--cor-primaria);
+    transition: 0.5s;
 }
+
+.tema-btn:hover {
+    box-shadow: var(--sombra);
+}
+
 .tema-icon{
     border-radius: 5px;
     filter: var(--logo-primario);
