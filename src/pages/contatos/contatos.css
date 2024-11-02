@@ -66,6 +66,10 @@
 
 
 /* Formulario */
+.contato-form {
+    padding: 1rem;
+}
+
 .contato-form fieldset {
     height: 100%;
     display: flex;
@@ -130,8 +134,7 @@
 }
 
 .faqs-main {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding: 4rem 1rem 6rem 1rem;
     color: var(--texto-primario);
 }
 .faqs-perguntas {
