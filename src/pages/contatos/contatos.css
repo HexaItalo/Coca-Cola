@@ -25,7 +25,7 @@
     margin-bottom: 10vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 1vw;
+    gap: 4vw;
 }
 
 
@@ -38,7 +38,7 @@
     background: var(--cor-variente);
     padding: 1rem;
     border-radius: 1rem;
-    min-width: 315px;
+    min-width: 270px;
     box-shadow: var(--sombra);
 }
 
