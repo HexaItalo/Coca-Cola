@@ -1,9 +1,62 @@
 @import url(/Coca-Cola/style.css);
 
-h1 {
+.titulococa{
+    text-align: center;
+    margin: 20px;
     color: var(--texto-primario);
+    font-size: 2.5rem;
 }
 
-main {
-    height: 100vh;
+.textococa{
+    text-align: justify;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    color: var(--texto-primario);
+    font-size: 1.2rem;   
+}
+
+.textococa1 {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.imagensorigem{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 0.5s;
+}
+.imagensNH{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+}
+
+@media only screen and (max-width: 1000px) {
+    .imagensNH{
+        flex-direction: column;
+    }
+    .imagensorigem{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .imagensorigem{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .imagensorigem{
+        width: 300px;
+        height: 300px;
+    }
+
 }
