@@ -5,155 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
     <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/public/style.css">
     <link rel="stylesheet" href="/src/pages/contatos/contatos.css">
 </head>
 
 <body>
     <header class="nav-head">
         <div class="nav-center">
-            <a href="/public/index.html">
-                <img class="nav-logo" src="/src/images/svg/coca_logo.svg" alt="">
+            <a href="index.html">
+                <img class="nav-logo" src="./src/images/svg/coca_logo.svg" alt="Logo Coca-Cola">
             </a>
             <button class="tema-btn">
-                <img class="tema-icon" src="/src/icons/icons-dark_mode.svg" alt="tema">
+                <img class="tema-icon" src="./src/icons/icons-dark_mode.svg" alt="Tema">
             </button>
         </div>
         <button class="menu">
-            <img id="menu-icon" src="/src/icons/icons-menu.svg">
+            <img id="menu-icon" src="./src/icons/icons-menu.svg" alt="Menu">
         </button>
         <nav class="nav-bar">
             <ul class="nav-menu">
                 <li>
-                    <a href="/public/index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li>
-                    <a href="/src/pages/produtos/produtos.html" class="nav-link">Produtos</a>
+                    <a href="./src/pages/produtos/produtos.html" class="nav-link">Produtos</a>
                 </li>
                 <li>
-                    <a href="/src/pages/promoções/promocoes.html" class="nav-link">Promoções</a>
+                    <a href="./src/pages/promoções/promocoes.html" class="nav-link">Promoções</a>
                 </li>
                 <li>
-                    <a href="/src/pages/marcas/marcas.html" class="nav-link">Marcas</a>
+                    <a href="./src/pages/marcas/marcas.html" class="nav-link">Marcas</a>
                 </li>
                 <li>
-                    <a href="/src/pages/sustentabilidade/sustentabilidade.html" class="nav-link">Sustentabilidae</a>
+                    <a href="./src/pages/sustentabilidade/sustentabilidade.html" class="nav-link">Sustentabilidae</a>
                 </li>
                 <li>
-                    <a href="/src/pages/nossa historia/nossahistoria.html" class="nav-link">Nossa Historia</a>
+                    <a href="./src/pages/nossa historia/nossahistoria.html" class="nav-link">Nossa Historia</a>
                 </li>
                 <li>
-                    <a href="/src/pages/contatos/contatos.html" class="nav-link">Contato</a>
+                    <a href="./src/pages/contatos/contatos.html" class="nav-link">Contato</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section class="conosco-head">
-        <div class="conosco-body container">
-            <h2>Fale Conosco</h2>
-            <img class="conosco-img" src="/src/images/svg/coca_logo.svg" alt="Logo">
+    <div class="container-faleconosco">
+        <h1>Fale conosco</h1>
+        <div class="logo-container">
+            <img src="/src/images/svg/coca_logo.svg" class="imagem-direita" alt="Logo da coca-cola">
+        </div>
+    </div>
+
+    <section class="section-contato container">
+        <div class="info-contato">
+            <h2 id="contato">Entre em Contato</h2>
+            <p>Ficou com alguma dúvida ou deseja saber mais sobre nossos serviços? Estamos à disposição para ajudar!</p>
+            <p>
+                Preencha o formulário ou, se preferir, envie um e-mail diretamente para nossa equipe. Também estamos
+                disponíveis por telefone ou nas redes sociais
+            </p>
+
+            <h3>TELEFONE</h3>
+            <p id="tel">999 999 999</p>
+            <h3>E-MAIL</h3>
+            <p id="email">coca-cola@gmail.com</p>
+            <h3>SIGA-NOS</h3>
+            <img src="/src/icons/icons-instagram.svg" alt="">
+            <img src="/src/icons/icons-youtube.svg" alt="">
+            <img src="/src/icons/icons-facebook.svg" alt="">
+        </div>
+
+        <div class="container-form">
+            <form>
+                <legend> FORMULARIO DE CONTATO</legend>
+
+                <input class="input" type="text" id="nome" placeholder="Nome" minlength="5" maxlength="15"> <br>
+
+                <input class="input" type="text" id="sobrenome" placeholder="Sobrenome"> <br>
+
+                <input class="input" type="email" id="email" placeholder="E-mail@gmail.com"> <br>
+
+                <textarea class="textarea" placeholder="Mensagem"></textarea> <br>
+
+                <input class="submit" type="submit" name="enviar" id="enviar">
+            </form>
         </div>
     </section>
 
-    <main>
-        <section class="contato-head container">
-            <div class="contato-main">
-                <div>
-                    <h3>Entre em Contato</h3>
-                    <p>
-                        Ficou com alguma dúvida ou deseja saber mais sobre nossos serviços? Estamos à disposição para
-                        ajudar!
-                        Preencha o
-                        formulário ou, se preferir, envie um e-mail diretamente para nossa equipe. Também estamos
-                        disponíveis
-                        por
-                        telefone ou nas redes sociais.
-                    </p>
-                </div>
-                <div>
-                    <h4>Telefone</h4>
-                    <span>999 999 999</span>
-                    <h4>E-mail</h4>
-                    <span>coca-cola@gmail.com</span>
-                    <h4>Siga-Nós</h4>
-                    <ul>
-                        <li>
-                            <img src="/src/icons/icons-instagram.svg" alt="instagram">
-                            <img src="/src/icons/icons-youtube.svg" alt="Yotuube">
-                            <img src="/src/icons/icons-facebook.svg" alt="Facebook">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="contato-form">
-                <form>
-                    <fieldset>
-                        <legend>Formulario de Contato</legend>
-
-                        <div class="contato-itens">
-                            <label for="fnome">Nome</label>
-                            <input class="contato-input" type="text" id="fnome" placeholder="João">
-                        </div>
-                        <div class="contato-itens">
-                            <label for="fsobrenome">Sobrenome</label>
-                            <input class="contato-input" type="text" id="fsobrenome" placeholder="Silva">
-                        </div>
-
-                        <div class="contato-itens">
-                            <label for="femail">Email</label>
-                            <input class="contato-input" type="email" name="email" id="femail"
-                                placeholder="google@gmail.com">
-                        </div>
-
-                        <div class="contato-itens">
-                            <label for="fmensagem">Mensagem</label>
-                            <textarea name="mensagem" id="fmensagem" placeholder="Escreva aqui"></textarea>
-                        </div>
-                        <input type="button" class="contato-button" id="fbutton" value="Enviar">
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-
-        <section class="faqs-head">
-            <div class="faqs-main container">
-                <div class="faqs-perguntas">
-                    <h3>FAQs - Perguntas Frequentes</h3>
-                    <p>
-                        Antes de entrar em contato, confira nossas perguntas frequentes para ver se já temos a resposta que
-                        você
-                        procura.
-                    </p>
-                </div>
-
-                <h4>1. Qual o prazo de entrega dos produtos ?</h4>
+    <section class=" faqs-head">
+        <div class="container faqs-main">
+            <div class="faqs-principal">
+                <h2> FAQs - Perguntas Frequentes </h2>
                 <p>
-                    O prazo de entrega varia conforme a sua localização e a modalidade de envio escolhida. Normalmente,
-                    as
-                    entregas
-                    são feitas entre 5 a 10 dias úteis após a confirmação do pedido.
-                </p>
-
-                <h4>2. Quais formas de pagamento vocês aceitam ?</h4>
-                <p>
-                    Aceitamos os principais métodos de pagamento, incluindo:Cartão de crédito (Visa, MasterCard, Elo),
-                    Boleto
-                    bancário, Transferência bancária, Pagamentos via PayPal
-                </p>
-
-                <h4>3. Como faço para rastrear meu pedido ?</h4>
-                <p>
-                    Assim que seu pedido for despachado, você receberá um e-mail com o código de rastreamento. Basta
-                    acessar
-                    o
-                    site
-                    da transportadora e inserir o código para acompanhar o status da entrega.
+                    Antes de entrar em contato, confira nossoas perguntas frequentes para ver se já temos <br> a
+                    resposta
+                    que
+                    você procura.
                 </p>
             </div>
-        </section>
-    </main>
+
+            <div class="faqs-itens">
+                <h3>1. Qual o prazo de entrega dos produtos?</h3>
+                <p>
+                    O prazo de entrega varia conforme a sua localização e a modalidade de envio escolhida.
+                    Normalmente,
+                    as entregas são feitas entre 5 a 10 dias úteis após a confirmação do pedido.
+                </p>
+            </div>
+
+            <div class="faqs-itens">
+                <h3>2. Quais formas de pagamento vocês aceitam?</h3>
+                <p>
+                    Aceitamos os principais métodos de pagamento, incluindo: Cartão de crédito (Visa,
+                    MasterCard,
+                    Elo),
+                    Boleto bancário, Transferência bancária, Pagamentos via PayPal.
+                </p>
+            </div>
+
+            <div class="faqs-itens">
+                <h3>3. Como faço para rastrear meu pedido?</h3>
+                <p>
+                    Assim que seu pedido for despachado, você receberá um e-mail com o código de rastreamento.
+                    Basta
+                    acessar o site da transportadora e inserir o código para acompanhar o status da entrega
+                </p>
+            </div>
+
+        </div>
+    </section>
 
     <footer class="rodape">
         <div class="container">
@@ -161,35 +140,35 @@
                 <h3>
                     Sobre Nós
                 </h3>
-                <img src="/src/images/svg/coca_logo.svg" alt="coca_logo">
+                <img src="./src/images/svg/coca_logo.svg" alt="Logo Coca Cola">
             </div>
             <div class="nav-rodape">
                 <div class="sobre-itens">
                     <ul>
-                        <li><a href="/src/pages/produtos/produtos.html">Produtos</a></li>
-                        <li><a href="/src/pages/promoções/promocoes.html">Promoções</a></li>
-                        <li><a href="/src/pages/marcas/marcas.html">Marcas</a></li>
+                        <li><a href="./src/pages/produtos/produtos.html">Produtos</a></li>
+                        <li><a href="./src/pages/promoções/promocoes.html">Promoções</a></li>
+                        <li><a href="./src/pages/marcas/marcas.html">Marcas</a></li>
                     </ul>
                     <ul>
-                        <li><a href="/src/pages/contatos/contatos.html">Contatos</a></li>
-                        <li><a href="/src/pages/sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
-                        <li><a href="/src/pages/nossa historia/nossahistoria.html">Nossa Historia</a></li>
+                        <li><a href="./src/pages/contatos/contatos.html">Contatos</a></li>
+                        <li><a href="./src/pages/sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
+                        <li><a href="./src/pages/nossa historia/nossahistoria.html">Nossa Historia</a></li>
                     </ul>
                     <div class="social">
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/Coca-Cola/" target="_blank">
-                                    <img src="/src/icons/icons-facebook.svg" alt="icons-facebook">
+                                    <img src="./src/icons/icons-facebook.svg" alt="icons-facebook">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/cocacola_br/" target="_blank">
-                                    <img src="/src/icons/icons-instagram.svg" alt="icons-instagram">
+                                    <img src="./src/icons/icons-instagram.svg" alt="icons-instagram">
                             </li>
                             </a>
                             <li>
                                 <a href="https://www.youtube.com/user/cocacola" target="_blank">
-                                    <img src="/src/icons/icons-youtube.svg" alt="icons-youtube">
+                                    <img src="./src/icons/icons-youtube.svg" alt="icons-youtube">
                                 </a>
                             </li>
                         </ul>
@@ -198,8 +177,6 @@
             </div>
         </div>
     </footer>
-
     <script src="/src/js/menu.js"></script>
 </body>
-
 </html>

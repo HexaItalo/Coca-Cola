@@ -1,158 +1,156 @@
 @import url(/public/style.css);
 
-.conosco-head {
-    height: 10vh;
-    background: var(--cor-secundaria);
-}
-
-.conosco-body {
-    height: 100%;
+.container-faleconosco{
+    position: relative;
+    padding: 20px;
+    background-color: var(--cor-secundaria);
     color: var(--texto-secundario);
+    transition: 0.5s;
+}
+.container-faleconosco h1 {
+    font-size: clamp(1.125rem, 0.7167rem + 1.8667vw, 2rem);
+}
+.logo-container{
+    position: absolute;
+    right: 0;
+    bottom: 25px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    margin-right: 20px;
 }
 
-.conosco-img {
+.imagem-direita{
     filter: var(--logo-primario);
-    height: 50%;
+    width: 180px;
 }
 
-/*Contato Base */
-.contato-head {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+.section-contato{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4vw;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem;
+    padding: 3rem 0;
 }
 
+.section-contato p, h3 {
+    padding: 5px;
+}
 
-/* Contato Info */
-.contato-main {
+.info-contato{
+    background: var(--cor-primaria);
     color: var(--texto-primario);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: var(--cor-variente);
-    padding: 1rem;
-    border-radius: 1rem;
-    min-width: 270px;
-    box-shadow: var(--sombra);
+    padding: 20px;
+    border-radius: 20px;
 }
-
-.contato-main h3{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.contato-main p {
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    
-}
-
-.contato-main h4 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-.contato-main img {
+.info-contato img{
     filter: var(--logo-sencudario);
 }
 
-
-/* Formulario */
-.contato-form {
-    padding: 1rem;
+#contato{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8em;
 }
 
-.contato-form fieldset {
-    height: 100%;
+.container-form{
+    background-color: var(--colorGray);
+    padding: 20px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: none;
-    gap: 1rem;
+    align-items: center;
+    color: var(--texto-primario)
+}
+.container-form legend{
+    text-align: center;
+    font-size: 1.3em;
+    font-family: Poppins;
+    font-weight: bold;
 }
 
-.contato-form legend {
-    color: var(--texto-primario);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: PoppinsMedium;
+form {
     width: 100%;
 }
-.contato-itens {
-    display: flex;
-    flex-direction: column;
-    color: var(--texto-primario);
+
+.input{
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1em;
 }
 
-.contato-form textarea {
-    height: 30vh;
-    border-radius: 0.3rem;
-    padding: 0.5rem;
-    border: 2px solid #ccc;
-    font-size: 1rem;
+.textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    padding: 8px;
     resize: none;
 }
 
-.contato-button {
-    border: none;
-    height: 5vh;
-    width: 25%;
-    min-width: 100px;
-    background: var(--cor-secundaria) ;
+.textarea::placeholder{
+    font-size: 1.2em;
+}
+
+#tel{
+    color:  var(--span-primario);
+}
+
+#email{
+    color: var(--span-primario);
+}
+
+.submit{
     color: var(--texto-secundario);
-    cursor: pointer;
-    border-radius: 0.3rem;
-    transition: 0.5s;
+    background-color: var(--cor-secundaria);
     border: 1px solid black;
+    margin: 1rem 0;
+    width: 100px;
+    padding: 5px;
+    font-family: Poppins;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.contato-button:hover {
-    background: var(--cor-primaria);
-    color: var(--texto-primario)
-}
-
-.contato-input {
-    height: 5vh;
-    border-radius: 0.3rem;
-    padding: 0.5rem;
-
-}
-
-/* Perguntas */
-.faqs-head {
-    background: var(--cor-variente);
-    border-top: 1px solid black;
+.submit:hover{
+   background: var(--cor-primaria);
+   color: var(--texto-primario);
 }
 
 .faqs-main {
-    padding: 4rem 1rem 6rem 1rem;
+    padding: 1rem 0 3rem;
     color: var(--texto-primario);
 }
-.faqs-perguntas {
-    margin-bottom: 4rem;
+.faqs-head {
+    border-top: 1px solid black;
+    background: var(--cor-primaria)
+}
+
+.faqs-principal {
     text-align: center;
+    padding: 2rem 0 2rem 0;
 }
 
-.faqs-main h3 {
-    font-size: 1.5rem;
+.faqs-itens {
+    padding: 1rem;
 }
 
-.faqs-main h4 {
-    margin-top: 2rem;
-    font-size: 1.2rem;
+@media screen and (max-width: 1250px) {
+    .faqs{
+        width: auto;
+        margin: auto;
+        padding: 15px;
+    }
+    
 }
 
-@media only screen and (max-width: 700px) {
-    .contato-head {
+@media screen and (max-width:768px ) {
+    .section-contato{
         grid-template-columns: 1fr;
+    }
+
+    .info-contato {
+        width: 100%;
     }
 }
