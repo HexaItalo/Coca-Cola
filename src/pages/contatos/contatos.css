@@ -4,7 +4,11 @@
     position: relative;
     padding: 20px;
     background-color: var(--cor-secundaria);
-    color: var(--texto-secundario)
+    color: var(--texto-secundario);
+    transition: 0.5s;
+}
+.container-faleconosco h1 {
+    font-size: clamp(1.125rem, 0.7167rem + 1.8667vw, 2rem);
 }
 .logo-container{
     position: absolute;
@@ -133,9 +137,6 @@ form {
 }
 
 @media screen and (max-width: 1250px) {
-    
-
-
     .faqs{
         width: auto;
         margin: auto;
