@@ -1,8 +1,4 @@
-/*
-////////////////////
-CONGIGURAÇÃO GLOBAL
-////////////////////
-*/
+/*Configura Global */
 :root {
     --cor-base: #e2e2e2;
     --cor-variente: #ffffff;
@@ -13,6 +9,10 @@ CONGIGURAÇÃO GLOBAL
     --logo-primario: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
     --logo-sencudario: none;
     --sombra: 0px 10px 10px rgba(38, 38, 38, 0.5);
+    
+
+
+
 }
 
 .modo-escuro {
@@ -26,6 +26,7 @@ CONGIGURAÇÃO GLOBAL
     --logo-sencudario:invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%) ;
     --sombra: 0px 10px 10px rgba(255, 255, 255, 0.5);
 }
+
 
 @font-face {
     font-family: Poppins;
@@ -70,11 +71,7 @@ body {
     max-height: 100%;
 }
 
-/*
-////////////////////
-NAVEGAÇÃO
-////////////////////
-*/
+/*Navegação*/
 .menu {
     display: none;
     background: var(--cor-primaria);
@@ -88,6 +85,7 @@ NAVEGAÇÃO
     min-width: 50px;
     min-height: 50px;
 }
+
 .tema-btn {
     margin-left: 1rem;
     border: none;
@@ -113,6 +111,7 @@ NAVEGAÇÃO
     display: flex;
     align-items: center ;
 }
+
 
 .nav-head {
     display: flex;
@@ -142,11 +141,7 @@ NAVEGAÇÃO
     filter: var(--logo-sencudario);
 }
 
-/*
-////////////////////
-SLOGAN 
-////////////////////
-*/
+/* SLOGAN */
 .slogan-bg {
     position: relative;
     width: 100%;
@@ -199,11 +194,7 @@ SLOGAN
     min-height: 250px;
 }
 
-/*
-////////////////////
-CARROCEL
-////////////////////
-*/
+/* Carrocel*/
 .carrocel {
     margin: 10vh 0 10vh 0;
     display: grid;
@@ -254,11 +245,7 @@ CARROCEL
     color: var(--colorBlack);
 }
 
-/*
-////////////////////
-ARTIGO
-////////////////////
-*/
+/*Artigo */
 .artigo-conteudo {
     display: flex;
     flex-direction: column;
@@ -298,11 +285,7 @@ ARTIGO
     border-radius: 2rem;
 }
 
-/*
-////////////////////
-RODAPÉ
-////////////////////
-*/
+/*Rodapé */
 .rodape {
     background: #181818;
 }
@@ -318,14 +301,15 @@ RODAPÉ
 .sobre h3 {
     color: #ffffff;
     font-family: PoppinsLight;
-    font-size: clamp(1.5rem, 1.1053rem + 2.1053vw, 3rem)
+    font-size: clamp(0.5rem, 0.1rem + 4vw, 2rem);
 }
 
 .sobre img {
     filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
     width: 15vw;
     height: 10vh;
-    min-width: 150px;
+    min-height: 100px;
+    min-width: 100px;
 }
 
 .nav-rodape {
@@ -349,7 +333,6 @@ RODAPÉ
 
 .sobre-itens a {
     color: #ffffff;
-    font-size: 1.2rem;
 }
 
 .sobre-itens li {
@@ -398,6 +381,7 @@ RODAPÉ
         width: 100%;
         height: 100%;
     }
+
 
     .nav-link {
         display: flex;
