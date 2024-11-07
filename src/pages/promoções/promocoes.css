@@ -1,6 +1,6 @@
 @import url(/Coca-Cola/style.css);
 
-p {
+h1 {
     color: var(--texto-primario);
 }
 
