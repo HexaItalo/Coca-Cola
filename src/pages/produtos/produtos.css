@@ -1,1 +1,9 @@
-@import url(/public/style.css);
+@import url(/Coca-Cola/style.css);
+
+p {
+    color: var(--texto-primario);
+}
+
+main {
+    height: 100vh;
+}

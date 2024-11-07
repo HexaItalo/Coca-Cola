@@ -10,9 +10,9 @@ tema.onclick = function (){
     corpo.classList.toggle("modo-escuro");
 
     if (corpo.classList.contains("modo-escuro")){
-        temaIcon.src = "/src/icons/icons-light_mode.svg";
+        temaIcon.src = "/Coca-Cola/src/icons/icons-light_mode.svg";
     }else{
-        temaIcon.src = "/src/icons/icons-dark_mode.svg";
+        temaIcon.src = "/Coca-Cola/src/icons/icons-dark_mode.svg";
     }
 }
 
@@ -21,15 +21,15 @@ menu.onclick = function () {
         navBar.classList.toggle("ativar");
         
         if (navBar.classList.contains("ativar")) {
-            menuIcon.src = "/src/icons/icons-fechar.svg"; 
+            menuIcon.src = "/Coca-Cola/src/icons/icons-fechar.svg"; 
         } else {
-            menuIcon.src = "/src/icons/icons-menu.svg"; 
+            menuIcon.src = "/Coca-Cola/src/icons/icons-menu.svg"; 
         }
 };
 
 window.addEventListener("resize", function () {
     if (window.innerWidth > 1000) {
         navBar.classList.remove("ativar"); 
-        menuIcon.src = "/src/icons/icons-menu.svg"; 
+        menuIcon.src = "/Coca-Cola/src/icons/icons-menu.svg"; 
     }
 });
