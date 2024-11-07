@@ -1,1 +1,5 @@
-@import url(/public/style.css);
+@import url(/Coca-Cola/style.css);
+
+main {
+    height: 60vh;
+}
