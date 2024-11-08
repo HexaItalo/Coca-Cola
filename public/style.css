@@ -9,10 +9,6 @@
     --logo-primario: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
     --logo-sencudario: none;
     --sombra: 0px 10px 10px rgba(38, 38, 38, 0.5);
-    
-
-
-
 }
 
 .modo-escuro {
@@ -183,6 +179,12 @@ body {
     width: 100%;
     padding: 0.3rem;
     border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.slogan-btn:hover {
+    background: white;
+    color: #000000;
 }
 
 .slogan-icon {
