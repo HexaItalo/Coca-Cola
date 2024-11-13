@@ -1,1 +1,63 @@
 @import url(/public/style.css);
+
+.banner-promocoes img {
+    width: 100%;
+    height: 70%;
+}
+.exp-promocao img {
+    width: 100%;
+    height: 100%;
+}
+.exp-promocao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-top: 20px; 
+    background: black;
+    color: white;
+}
+
+.passo-a-passo{
+    width: 100%;
+    padding-top: 32px;
+}
+.passo-a-passo h1 {
+    text-align: center;
+}
+.passo-conteudo{
+    display: grid;
+    padding-top: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    
+    justify-items: center;
+    justify-content: center;
+}
+.passo-conteudo img{
+    width: 200px;
+    height: 200px;
+}
+.r1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slogan-sustentavel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: 32px;
+}
+.sloganverde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 32px;
+}
+.verdeimg img{
+    width: 100%;
+    height: 100%;
+}
