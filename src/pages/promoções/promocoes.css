@@ -32,18 +32,23 @@
 .promocoes-conteudo {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    justify-content: center;
 }
 .promocoes-conteudo h1{
     text-align: center;
     font-size: 2rem;
+    color: var(--texto-primario);
+    
+
 }
 
 .promocoes-conteudo p {
     text-align: justify;
     font-size: 1.5rem;
     font: PoppinsLight;
-    color: rgb(57, 57, 57);
+    color: var(--texto-terciario);
+
 }
 
 
@@ -66,8 +71,9 @@
 
 .passo-a-passo{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background: white;
+    margin-top: 5rem;
 }
 .passo-head {
     padding: 3rem 0;
@@ -79,7 +85,7 @@
     font-size: 2rem;
 }
 .r1 img {
-    filter: var(--logo-primario);
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
 }
 .card-promo {
     display: flex;
@@ -111,6 +117,7 @@
 
 
 
+/*passo a passo  */
 
 .passo-conteudo{
     display: grid;
@@ -144,6 +151,9 @@
     justify-content: center;
     gap: 16px;
     padding-top: 32px;
+}
+.sloganverde h1{
+    color: var(--texto-primario);
 }
 .verdeimg img{
     width: 100%;
