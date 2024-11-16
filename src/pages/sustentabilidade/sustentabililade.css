@@ -28,7 +28,7 @@
 .titulo-principal {
     text-align: center;
     font-family: PoppinsBold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--texto-primario);
 
 
@@ -78,10 +78,4 @@
     align-items: center;
    
 
-}
-
-@media only screen and (max-width: 700px) {
-    .titulo-principal {
-        font-size: 2rem;
-    }
 }
