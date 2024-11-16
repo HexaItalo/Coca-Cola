@@ -1,1 +1,81 @@
 @import url(/public/style.css);
+
+.imagemtitulo {
+
+    width: 100%;
+    /* isso é padrão para elementos div */
+    align-self: center;
+
+
+}
+
+.imagem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 5%;
+
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.titulo-principal {
+    text-align: center;
+    font-family: PoppinsBold;
+    font-size: 3rem;
+    color: var(--texto-primario);
+
+
+}
+
+.subtitulo-texto {
+    text-align: center;
+    font-family: PoppinsBold;
+    font-size: 2rem;
+    color: var(--texto-primario);
+
+
+}
+
+.texto-destaque {
+    text-align: center;
+    font-family: PoppinsLight;
+    font-size: 2rem;
+    font-style: italic;
+    color: #000000d1;
+}
+.borda{
+    background-color: #ffffff;
+    border-radius: 25px 25px;
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: 100%;
+    padding: 1.5rem;  
+
+}
+
+.texto {
+    text-align: justify;
+    text-align: match-parent;
+    font-family: PoppinsLight;
+    font-size: 1.5rem;
+    color: var(--texto-primario);
+
+}
+
+
+
+.video {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
