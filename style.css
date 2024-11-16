@@ -4,11 +4,13 @@
     --cor-variente: #ffffff;
     --cor-primaria:  #ffffff;
     --cor-secundaria: #000000;
+    --cor-terciaria: #ffffff;
     --texto-primario: #000000;
     --texto-secundario: #ffffff;
     --logo-primario: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
     --logo-sencudario: none;
     --sombra: 0px 10px 10px rgba(38, 38, 38, 0.5);
+    --texto-terciario: #6e6e6e;
 }
 
 .modo-escuro {
@@ -18,6 +20,8 @@
     --cor-secundaria:   #ffffff ;
     --texto-primario: #ffffff;
     --texto-secundario: #000000;
+    --texto-terciario: #ffffff;
+    --cor-terciaria: #fefefe;
     --logo-primario: none;
     --logo-sencudario:invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%) ;
     --sombra: 0px 10px 10px rgba(255, 255, 255, 0.5);
