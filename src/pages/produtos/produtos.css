@@ -9,7 +9,7 @@
         }
 
         body {
-            background-image: url('https://www.example.com/imagem-de-fundo.jpg'); /* Substitua pelo URL da imagem de fundo */
+            background-image: url('fundo'); 
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
