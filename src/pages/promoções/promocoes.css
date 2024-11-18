@@ -73,9 +73,8 @@
 
 .formulario legend {
     text-align: center;
-    text-transform: uppercase;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-family: PoppinsBold;
     margin-bottom: 1rem;
 }
 .formulario input {
@@ -116,6 +115,7 @@
 
 .maps-boy h3 {
     margin-bottom: 1rem;
+    font-family: PoppinsBold;
 }
 
 .maps {
