@@ -42,6 +42,7 @@
     background: var(--cor-primaria);
     color: var(--texto-primario);
     border-radius: 1rem;
+    font-family: PoppinsBold;
 }
 
 .passo-boy h2 {
