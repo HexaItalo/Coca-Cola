@@ -42,12 +42,10 @@
     background: var(--cor-primaria);
     color: var(--texto-primario);
     border-radius: 1rem;
-    font-family: PoppinsBold;
 }
 
 .passo-boy h2 {
     padding: 1rem;
-    font-family: PoppinsBold;
     font-size: 2rem;
 }
 
@@ -74,7 +72,6 @@
 .formulario legend {
     text-align: center;
     font-size: 1.5rem;
-    font-family: PoppinsBold;
     margin-bottom: 1rem;
 }
 .formulario input {
