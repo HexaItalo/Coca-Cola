@@ -82,6 +82,7 @@
 .passo-a-passo h1 {
     text-align: center;
     font-size: 2rem;
+    font-family: PoppinsBold;
 }
 .r1 img {
     filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
