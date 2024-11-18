@@ -46,9 +46,8 @@
 
 .passo-boy h2 {
     padding: 1rem;
-    text-transform: uppercase;
+    font-family: PoppinsBold;
     font-size: 2rem;
-    font-weight: bold;
 }
 
 .passo-main {
