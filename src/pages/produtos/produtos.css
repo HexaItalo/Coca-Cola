@@ -9,7 +9,7 @@
         }
 
         body {
-            background-image: url('fundo'); 
+            background-image: url("/src/images/jpg/produtos.jpg"); 
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
