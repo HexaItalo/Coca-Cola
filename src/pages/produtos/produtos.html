@@ -1,4 +1,5 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,32 +7,119 @@
     <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/pages/produtos/produtos.css">
 </head>
+
 <body>
-    <h1>Produtos</h1>
+    <header class="nav-head">
+        <div class="nav-center">
+            <a href="/public/index.html">
+                <img class="nav-logo" src="/src/images/svg/coca_logo.svg" alt="">
+            </a>
+            <button class="tema-btn">
+                <img class="tema-icon" src="/src/icons/icons-dark_mode.svg" alt="tema">
+            </button>
+        </div>
+        <button class="menu">
+            <img id="menu-icon" src="/src/icons/icons-menu.svg">
+        </button>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li>
+                    <a href="/public/index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="/src/pages/produtos/produtos.html" class="nav-link">Produtos</a>
+                </li>
+                <li>
+                    <a href="/src/pages/promoções/promocoes.html" class="nav-link">Promoções</a>
+                </li>
+                <li>
+                    <a href="/src/pages/marcas/marcas.html" class="nav-link">Marcas</a>
+                </li>
+                <li>
+                    <a href="/src/pages/sustentabilidade/sustentabilidade.html" class="nav-link">Sustentabilidade</a>
+                </li>
+                <li>
+                    <a href="/src/pages/nossa historia/nossahistoria.html" class="nav-link">Nossa Historia</a>
+                </li>
+                <li>
+                    <a href="/src/pages/contatos/contatos.html" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-     <div class="container">
-        <div class="product">
-            <img src="/src/images/jpg/produtos coca.jpg" alt="Produto 1">
-            <div class="description">
-                <p>Descrição do Produto 1 - Um clássico sabor de Coca-Col, diversos tipos e tamanhos.</p>
+
+    <main>
+        <h1>Produtos</h1>
+
+        <div class="container-produtos">
+            <div class="product">
+                <img src="/src/images/jpg/produtos coca.jpg" alt="Produto 1">
+                <div class="description">
+                    <p>Descrição do Produto 1 - Um clássico sabor de Coca-Col, diversos tipos e tamanhos.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="/src/images/jpg/produtos1.png" alt="Produto 2">
+                <div class="description">
+                    <p>Descrição - Mais</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="/src/images/jpg/produtos combo.jpg" alt="Produto 3">
+                <div class="description">
+                    <p>Descrição - Coca-Cola combos.</p>
+                </div>
             </div>
         </div>
+    </main>
 
-        <div class="product">
-            <img src="/src/images/jpg/produtos1.png" alt="Produto 2">
-            <div class="description">
-                <p>Descrição - Mais</p>
+    <footer class="rodape">
+        <div class="container">
+            <div class="sobre">
+                <h3>
+                    Sobre Nós
+                </h3>
+                <img src="/src/images/svg/coca_logo.svg" alt="coca_logo">
+            </div>
+            <div class="nav-rodape">
+                <div class="sobre-itens">
+                    <ul>
+                        <li><a href="/src/pages/produtos/produtos.html">Produtos</a></li>
+                        <li><a href="/src/pages/promoções/promocoes.html">Promoções</a></li>
+                        <li><a href="/src/pages/marcas/marcas.html">Marcas</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/src/pages/contatos/contatos.html">Contatos</a></li>
+                        <li><a href="/src/pages/sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
+                        <li><a href="/src/pages/nossa historia/nossahistoria.html">Nossa Historia</a></li>
+                    </ul>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/Coca-Cola/" target="_blank">
+                                    <img src="/src/icons/icons-facebook.svg" alt="icons-facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cocacola_br/" target="_blank">
+                                    <img src="/src/icons/icons-instagram.svg" alt="icons-instagram">
+                            </li>
+                            </a>
+                            <li>
+                                <a href="https://www.youtube.com/user/cocacola" target="_blank">
+                                    <img src="/src/icons/icons-youtube.svg" alt="icons-youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="product">
-            <img src="/src/images/jpg/produtos combo.jpg" alt="Produto 3">
-            <div class="description">
-                <p>Descrição - Coca-Cola combos.</p>
-            </div>
-        </div>
-    </div>
-
+    </footer>
     <script src="/src/js/menu.js"></script>
 </body>
+
 </html>
