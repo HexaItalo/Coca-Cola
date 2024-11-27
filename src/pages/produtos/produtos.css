@@ -1,7 +1,7 @@
 @import url(/Coca-Cola/style.css);
 
 main {
-    background-image: url("/Coca-Cola/src/images/jpg/produtos.jpg");
+    background-image: url("/Coca-Cola/src/images/png/produtos.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
